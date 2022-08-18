@@ -623,13 +623,14 @@ a
         display: none;
     }
     .nature__img-mobile{
+        width: 100%;
         display: block;
         z-index: -1;
     }
     .block{
         position: static;
-        max-width: 375px;
-        padding-left: 15px;
+        max-width: 100%;
+        padding: 0 15px;
         height: auto;
         background: none;
     }
