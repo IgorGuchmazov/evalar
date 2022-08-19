@@ -503,7 +503,7 @@ a
 
 .form__inner{
     height: 404px;
-    background-image: url("/images/back_form.png");
+    background-image: url("../images/back_form.png");
     display: flex;
     justify-content: center;
     align-items: center;
@@ -550,6 +550,9 @@ a
     font-weight: 400;
     font-size: 18px;
     line-height: 22px;
+}
+
+.submit__form input::placeholder{
     color: #BFBFBF;
 }
 
@@ -774,6 +777,36 @@ a
     }
     .information__inner-mobile{
         display: block;
+    }
+
+
+    .form__inner{
+        height: auto;
+        margin-top: 40px;
+        padding: 66px 7px 30px;
+    }
+    .form__block{
+        padding: 0 16px;
+    }
+    .form__block h2{
+        font-size: 22px;
+        line-height: 27px;
+        color: #1F1F1F;
+    }
+    .submit{
+        padding: 30px 36px 25px 28px;
+        border-radius: 20px;
+    }
+    .submit__form input[type="email"] {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .submit button{
+        display: block;
+        margin: 0 auto;
+    }
+    .submit input{
+        margin-bottom: 30px;
     }
 }
 
