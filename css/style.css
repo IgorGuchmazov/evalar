@@ -409,6 +409,13 @@ a
     margin: 0 auto;
 }
 
+.mobile{
+    display: none;
+}
+.mobile__header{
+    display: none;
+}
+
 .news__inner{
     padding: 0 152px;
     margin-bottom: 97px;
@@ -448,7 +455,7 @@ a
 
 .number__block{
     position: absolute;
-    top: -35px;
+    top: -6px;
     left: 0;
     font-family: 'Athelas';
     font-style: normal;
@@ -495,6 +502,65 @@ a
 
 /*---------------------------------------------------*/
 
+.mobile{
+    margin-top: 50px;
+    position: relative;
+}
+.mobile .slick-track{
+    display: flex;
+}
+.mobile .slick-list{
+    overflow: hidden;
+}
+.mobile .slider-second{
+    position: relative;
+    padding: 0 40px;
+}
+.mobile .arrows-second .slick-arrow{
+    position: absolute;
+    top: calc(50% - 21px);
+    z-index: 10;
+    font-size: 0;
+    width: 42px;
+    height: 42px;
+}
+.mobile .arrows-second .slick-arrow.slick-prev{
+    left: calc(50% + -183px);
+    background: url('../images/prev-slide.svg') 0 0 no-repeat;
+    background-color: #00963E;
+    background-position: center center;
+    border: none;
+    border-radius: 50%;
+}
+.mobile .arrows-second .slick-arrow.slick-next{
+    right: calc(50% + -183px);
+    background: url('../images/next-slide.svg') 0 0 no-repeat;
+    background-color: #00963E;
+    border: none;
+    border-radius: 50%;
+    background-position: center center;
+}
+
+
+
+
+.mobile .slider__item{
+    position: relative;
+}
+.mobile .slider__item img
+{
+    display: block;
+    margin: 0 auto;
+}
+.mobile .slider-second
+{
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 34px 13px 0 13px;
+    position: relative;
+}
+
+/* --------------------------------------------------*/
 .form__container{
     max-width: 1440px;
     width: 100%;
@@ -624,7 +690,7 @@ a
     } */
 
     .container{
-        z-index: 3;
+        z-index: 15;
         position: fixed;
         background: rgba(255, 255, 255, 0.39);
         backdrop-filter: blur(4px);
@@ -780,6 +846,37 @@ a
     }
 
 
+    .news__slider{
+        display: none;
+    }
+    .news .mobile{
+        display: block;
+    }
+    .news .desktop__header{
+        display: none;
+    }
+    .news__inner{
+        margin-bottom: 50px;
+    }
+    .news .mobile__header{
+        display: block;
+        font-family: 'Gosha Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 43px;
+        text-align: center;
+        color: #000000;
+    }
+    .news__inner{
+        padding: 0;
+    }
+    .news__img{
+        max-width: -webkit-fill-available;
+        padding: 0 15px;
+        margin-bottom: 0;
+    }
+
     .form__inner{
         height: auto;
         margin-top: 40px;
@@ -808,6 +905,7 @@ a
     .submit input{
         margin-bottom: 30px;
     }
+
 }
 
 

@@ -3,3 +3,9 @@ $(document).ready(function(){
         appendArrows:$('.arrows')
     });
 });
+
+$(document).ready(function(){
+    $('.slider-second').slick({
+        appendArrows:$('.arrows-second')
+    });
+});
