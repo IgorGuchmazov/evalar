@@ -491,7 +491,7 @@ a
     margin-bottom: 16px;
 }
 
-.news__block-text a{
+.news__block-text .news__block-submit{
     font-family: 'PF Centro Sans Pro';
     font-style: normal;
     font-weight: 400;
@@ -518,7 +518,8 @@ a
 }
 .mobile .arrows-second .slick-arrow{
     position: absolute;
-    top: calc(50% - 21px);
+    top: auto;
+    bottom: 90px;
     z-index: 10;
     font-size: 0;
     width: 42px;
@@ -871,11 +872,16 @@ a
     .news__inner{
         padding: 0;
     }
+    .news__block-text{
+        margin-bottom: 0;
+    }
     .news__img{
         max-width: -webkit-fill-available;
         padding: 0 15px;
         margin-bottom: 0;
     }
+
+
 
     .form__inner{
         height: auto;
