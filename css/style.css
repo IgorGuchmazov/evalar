@@ -455,7 +455,7 @@ a
 
 .number__block{
     position: absolute;
-    top: -6px;
+    top: -36px;
     left: 0;
     font-family: 'Athelas';
     font-style: normal;
@@ -466,6 +466,7 @@ a
 }
 
 .news__block-text{
+    position: relative;
     padding-left: 15px;
 }
 
@@ -557,7 +558,7 @@ a
 {
     max-width: 350px;
     margin: 0 auto;
-    padding: 34px 13px 0 13px;
+    padding: 0 13px 0 13px;
     position: relative;
 }
 
